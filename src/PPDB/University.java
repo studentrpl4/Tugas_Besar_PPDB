@@ -8,6 +8,16 @@ package PPDB;
  *
  * @author LENOVO
  */
-public class University {
-    
+public class Universitas {
+    private int idUniversitas;
+    private String namaUniversitas;
+
+    public Universitas(int idUniversitas, String namaUniversitas) {
+        this.idUniversitas = idUniversitas;
+        this.namaUniversitas = namaUniversitas;
+    }
+
+    public void lihatProgramStudi() {
+        System.out.println("Menampilkan daftar program studi di " + namaUniversitas);
+    }
 }
